@@ -1,0 +1,34 @@
+[
+    {
+        "imgSrc": "html.png",
+        "title": "HTML" 
+    },
+    {
+        "imgSrc": "css.png",
+        "title": "CSS" 
+    },
+    {
+        "imgSrc": "js.png",
+        "title": "JavaScript" 
+    },
+    {
+        "imgSrc": "tailwindcss.png",
+        "title": "Tailwindcss" 
+    },
+    {
+        "imgSrc": "sass.png",
+        "title": "Sass" 
+    },
+    {
+        "imgSrc": "react.png",
+        "title": "React" 
+    },
+    {
+        "imgSrc": "redux.png",
+        "title": "Redux" 
+    },
+    {
+        "imgSrc": "version-control.png",
+        "title": "Version Control" 
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "imgSrc": "project-1.PNG",
+        "title": "Youtube Interface",
+        "link": "https://sididev.github.io/youtube_project/"
+    },
+    {
+        "imgSrc": "project-2.PNG",
+        "title": "E-shop Interface",
+        "link": "https://sididev.github.io/shop-site/"
+    },
+    {
+        "imgSrc": "project-3.PNG",
+        "title": "Freelance Interface",
+        "link": "https://sididev.github.io/workflow/"
+    },
+    {
+        "imgSrc": "project-4.PNG",
+        "title": "Remotely Job",
+        "link": "https://sididev.github.io/remotely-jobs/"
+    }
+]

@@ -1,0 +1,66 @@
+nav {
+    width: 100%;
+  }
+  
+    header .header-container {
+      height: 530px;
+    }
+  
+  @media screen and (min-width: 640px) {
+    header .header-container {
+      height: 400px;
+    }
+  }
+  @media screen and (min-width: 200px) {
+    .skills-container {
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
+  @media screen and (min-width: 200px) and (max-width: 527px) {
+    .skills-container .skill {
+      margin: auto;
+    }
+  
+    .skill-title {
+      text-align: center;
+    }
+  
+  }
+  
+  @media screen and (min-width: 528px) {
+    .skills-container {
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
+  @media screen and (min-width: 776px) {
+    .skills-container {
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+  
+  @media screen and (min-width: 1010px) {
+    .skills-container {
+      grid-template-columns: repeat(4,1fr);
+    }
+  }
+  
+  @media screen and (min-width: 200px) and (max-width: 414px) {
+    .project-title {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 1409px) {
+      
+    .app-container {
+      width: 1284px;
+      margin: auto;
+    }
+
+    nav {
+      width: 1284px;
+      margin: auto;
+    }
+  }

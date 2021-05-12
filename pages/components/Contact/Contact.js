@@ -15,23 +15,18 @@ const Contact = () => {
                 <div className="flex flex-wrap justify-center">
                     <a href="https://twitter.com/sidi_jeddou_dev" className="no-underline ml-4 mt-4 rounded-full">                        
                         <div className="flex justify-center items-center w-16 h-16 rounded-full border-2 borde-gray-500">
-                            <i className="fab fa-twitter text-2xl text-indigo-600 hover:text-indigo-700"></i>
-                        </div>
-                    </a>
-                    <a href="https://instagram.com/sidi_jeddou_dev" className="no-underline ml-4 mt-4 rounded-full">
-                        <div className="flex justify-center items-center w-16 h-16 rounded-full border-2 borde-gray-500">
-                            <i className="fab fa-instagram text-2xl text-indigo-600 hover:text-indigo-700"></i>
+                            <img src="/images/twitter.png" />
                         </div>
                     </a>
                     <a href="mailto:sididev3@gmail.com" className="no-underline ml-4 mt-4 rounded-full">
                         <div className="flex justify-center items-center w-16 h-16 rounded-full border-2 borde-gray-500">
-                            <i className="fas fa-envelope text-2xl text-indigo-600 hover:text-indigo-700"></i>
+                            <img src="/images/email.png" className="w-10 h-10" />
                         </div>
                     </a>
                     <a href="https://github.com/sidiDev" className="no-underline ml-4 mt-4 rounded-full">
                         
                         <div className="flex justify-center items-center w-16 h-16 rounded-full border-2 borde-gray-500">
-                            <i className="fab fa-github text-2xl text-indigo-600 hover:text-indigo-700"></i>
+                            <img src="/images/github.svg" />
                         </div>
                     </a>
                 </div>
