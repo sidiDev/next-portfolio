@@ -6,10 +6,11 @@ import Skills from './components/Skills/Skills'
 import Projects from './components/Projects/Projects'
 import Contact from './components/Contact/Contact'
 import Footer from './components/Footer/Footer'
+import Bar from './components/Bar/Bar'
 
 export default function Home() {
   return (
-    <div>
+    <div className="relative font-mono">
       <Head>
         <meta property="og:site_name" content="sidiDev - front end developer" /> 
         <meta name="keyword" content="developer,portfolio,front end,front end job,web developer,web development,web designer,html,css,javascript,bootstrap,web dev,web,website" />
@@ -27,6 +28,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
+      <Bar />
       <Footer />
     </div>
   )
