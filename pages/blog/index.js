@@ -1,15 +1,26 @@
 import BlogCard from "../components/BlogCard/BlogCard"
+import Head from 'next/head'
 
 const index = () => {
     return (
         <div className="font-mono bg-white">
+            <Head>
+                <meta property="og:site_name" content="sidiDev - front end developer" /> 
+                <meta name="keyword" content="programing,software,developer,blog,front end,front end job,web developer,web development,web designer,html,css,javascript,bootstrap,web dev,web,website, javascript,go,c#,c++,python,php,nodejs,expressjs,ruby,tailwindcss,sass,scss,reactjs,nextjs" />
+                <meta name="description" content="I'am a frontend developer and this is my blog i share here my software knowldge about programing, frameworks, tools, some tips to help you as a programmer or as a software engineer" />
+                <meta name="twitter:site" content="@sidi_jeddou_dev" />
+                <meta name="twitter:creator" content="@sidi_jeddou_dev" />
+                <title>
+                    SidiDev - Blog
+                </title>
+            </Head>
             <div className="w-full h-72 bg-gray-900 relative">
                 <div className="mx-8 h-full flex justify-center items-center">
                     <div className="text-center">
                         <h1 className="text-3xl text-gray-100 sm:text-4xl">
                             Welcome in my blog
                         </h1>
-                        <p className="mt-2 text-gray-300">I share some of my software knowldge in this blog</p>
+                        <p className="mt-2 m-auto text-gray-300 text-sm sm:text-base sm:w-5/6">I share some of my experience and my software knowldge in this blog</p>
                     </div>
                 </div>
                 <div className="absolute w-32 h-32 rounded-full bg-white m-auto" style={{bottom: '-4em', left: 0, right: 0}}>

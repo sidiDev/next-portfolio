@@ -8,7 +8,7 @@ const Projects = () => {
                 return (
                     <div className="rounded mt-3 project" key={key} style={{width: '360px',border: 'solid 2px #DDDDDD'}}>
                         <div className="w-full h-64" style={{borderBottom: 'solid 2px #DDDDDD'}}>
-                            <img src={`images/${items.imgSrc}`} className="w-full h-full"/>
+                            <img src={`images/${items.imgSrc}?q=70`} loading="lazy" className="w-full h-full"/>
                         </div>
                         <div className="w-full p-4 flex flex-wrap justify-between">
                             <div className="ml-1 py-2 px-2 bg-gray-400 inline-block rounded-full project-title">

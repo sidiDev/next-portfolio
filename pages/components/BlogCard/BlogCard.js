@@ -1,12 +1,11 @@
 import Link from 'next/link'
-import Image from 'next/image'
 
 const BlogCard = () => {
     return (
         <div className="shadow-lg border rounded-md transition duration-300 hover:shadow-sm">
-            <Link href="">
+            <Link href="/blog/how-to-create-a-website">
                 <a>
-                    <Image src="/images/blog-cover.png" alt="" width="1000px" height="450px" layout="intrinsic" className="w-full rounded-tl-md rounded-tr-md" />
+                    <img src="/images/blog-cover.png?q=70" loading="lazy" alt="" width="1000px" height="450px" layout="intrinsic" className="w-full rounded-tl-md rounded-tr-md" />
                     <div className="pt-3 ml-6 mr-2">
                         <p className="text-xl text-gray-900">
                             We’ve got more coming...
