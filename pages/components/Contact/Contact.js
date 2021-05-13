@@ -15,12 +15,12 @@ const Contact = () => {
                 <div className="flex flex-wrap justify-center">
                     <a href="https://twitter.com/sidi_jeddou_dev" className="no-underline ml-4 mt-4 rounded-full">                        
                         <div className="flex justify-center items-center w-16 h-16 rounded-full border-2 borde-gray-500">
-                            <img src="/images/twitter.png" />
+                            <img src="/images/twitter.webp" />
                         </div>
                     </a>
                     <a href="mailto:sididev3@gmail.com" className="no-underline ml-4 mt-4 rounded-full">
                         <div className="flex justify-center items-center w-16 h-16 rounded-full border-2 borde-gray-500">
-                            <img src="/images/email.png" className="w-10 h-10" />
+                            <img src="/images/email.webp" className="w-10 h-10" />
                         </div>
                     </a>
                     <a href="https://github.com/sidiDev" className="no-underline ml-4 mt-4 rounded-full">

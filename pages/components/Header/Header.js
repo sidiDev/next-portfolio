@@ -15,7 +15,7 @@ const Header = () => {
                             </div>
                         </div>
                         <div className="w-full bg-center mt-12 lg:mt-20">
-                            <img src='/images/header-icon.png' className="w-full ms:w-full"/>
+                            <img src='/images/header-icon.webp' className="w-full ms:w-full"/>
                         </div>
                     </div>
                 </div>

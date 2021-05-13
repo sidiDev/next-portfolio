@@ -5,7 +5,7 @@ const About = () => {
                 <p className="pb-3 border-b-4 border-teal-600 inline-block text-xl sm:text-2xl">About me</p>
                 <div className="block sm:flex sm:justify-between sm:items-center sm:flex-row-reverse">
                     <div className="w-full mt-5 sm:mt-0">
-                        <img src='/images/about-icon.png' />
+                        <img src='/images/about.webp' />
                     </div>
                     <div className="w-full mt-5">
                         <p className="text-gray-800 text-left">
@@ -19,15 +19,15 @@ const About = () => {
                 </div>
                 <div className="flex flex-wrap sm:space-x-6 mt-5 justify-center">
                     <div className="w-full sm:w-48 mt-5 sm:mt-0">
-                        <img src='/images/responsive-design .png' className="w-16 m-auto"/>
+                        <img src='/images/responsive.webp' className="w-16 m-auto"/>
                         <p className="mt-2 text-center"><b>Responsive Design</b></p>
                     </div>
                     <div className="w-full sm:w-48 mt-5 sm:mt-0">
-                        <img src='/images/idea.png' className="w-16 m-auto"/>
+                        <img src='/images/idea.webp' className="w-16 m-auto"/>
                         <p className="mt-2 text-center"><b>Creative</b></p>
                     </div>
                     <div className="w-full sm:w-48 mt-5 sm:mt-0">
-                        <img src='/images/clean-code.png' className="w-16 m-auto"/>
+                        <img src='/images/clean-code.webp' className="w-16 m-auto"/>
                         <p className="mt-2 text-center"><b>Clean &amp; reusable code</b></p>
                     </div>
                 </div>

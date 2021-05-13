@@ -1,34 +1,34 @@
 [
     {
-        "imgSrc": "html.png",
+        "imgSrc": "html.webp",
         "title": "HTML" 
     },
     {
-        "imgSrc": "css.png",
+        "imgSrc": "css.webp",
         "title": "CSS" 
     },
     {
-        "imgSrc": "js.png",
+        "imgSrc": "js.webp",
         "title": "JavaScript" 
     },
     {
-        "imgSrc": "tailwindcss.png",
+        "imgSrc": "tailwindcss.webp",
         "title": "Tailwindcss" 
     },
     {
-        "imgSrc": "sass.png",
+        "imgSrc": "sass.webp",
         "title": "Sass" 
     },
     {
-        "imgSrc": "react.png",
+        "imgSrc": "react.webp",
         "title": "React" 
     },
     {
-        "imgSrc": "redux.png",
+        "imgSrc": "redux.webp",
         "title": "Redux" 
     },
     {
-        "imgSrc": "version-control.png",
+        "imgSrc": "version-control.webp",
         "title": "Version Control" 
     }
 ]
