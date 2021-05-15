@@ -20,11 +20,11 @@ const Navbar = () => {
         <nav className="bg-white shadow relative sm:fixed top-0 z-40 left-0 right-0">
             <div className="py-4 items-center sm:flex justify-between relative">
                 <div className="ml-8 sm:ml-12 inline-block text-xl h-8">
-                    <a href="/" className="no-underline text-black flex w-full h-full">
+                    <a href="/" className="no-underline text-black flex items-center w-full h-full">
                         <div className="w-12 h-8">
                             <img src='/images/logo.png' className="w-full h-full"/>
                         </div>
-                        <span className="block ml-2 w-24">SidiDev</span>
+                        <span className="block text-gray-900 font-medium ml-2 text-2xl">Sidi<span style={{color: '#0D9488'}}>Dev</span></span>
                     </a>
                 </div>
                 <div className="overflow-hidden shadow-md h-0 absolute bg-white w-full pb-4 sm:relative sm:inline-block sm:h-auto sm:w-auto sm:shadow-none sm:pb-0 nav-items-container" style={{transition: '.3s ease-in-out'}}>

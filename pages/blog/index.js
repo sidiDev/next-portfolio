@@ -3,8 +3,10 @@ import Contact from "../components/Contact/Contact"
 import Footer from "../components/Footer/Footer"
 
 import Head from 'next/head'
+import api from "../components/api/api"
 
-const index = () => {
+const index = ({data}) => {
+    
     return (
         <div className="font-mono bg-white">
             <Head>
@@ -34,16 +36,7 @@ const index = () => {
                 </div>
             </div>
             <div className="mx-8 mt-32 mb-4 grid gap-2 sm:w-5/6 lg:w-4/6 sm:grid-cols-2 sm:mx-auto">
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-                <BlogCard />
-
+                <BlogCard data={data} />
             </div>
             <div className="mt-4">
                 <Contact />
@@ -51,6 +44,12 @@ const index = () => {
             </div>
         </div>
     )
+}
+
+index.getInitialProps = async () => {
+    const res = await fetch(`${api()}/api/articles`)
+    const json = await res.json()
+    return { data: json.articles ?  json.articles : []}
 }
 
 export default index
