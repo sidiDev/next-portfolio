@@ -15,7 +15,7 @@ const BlogCard = () => {
                     </div>
                     <div className="flex items-center space-x-3 mt-2 pt-3 pb-2 ml-4 mr-2">
                         <div className="w-12 h-12 rounded-full">
-                            <img src="/images/idea.png" alt="" />
+                            <img src="/images/idea.webp" alt="" />
                         </div>
                         <div>
                             <span className="block text-gray-900">Sidi dev</span>
