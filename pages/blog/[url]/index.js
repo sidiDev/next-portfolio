@@ -5,7 +5,7 @@ import Navbar from '../../components/Article/Navbar'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
 
-const index = () => {
+const Index = () => {
 
     const router = useRouter()
 
@@ -23,4 +23,4 @@ const index = () => {
     )
 }
 
-export default index
+export default Index
