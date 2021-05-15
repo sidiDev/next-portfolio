@@ -1,11 +1,11 @@
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
-import Article from '../components/Article/Article'
-import Navbar from '../components/Article/Navbar'
-import Contact from '../components/Contact/Contact'
-import Footer from '../components/Footer/Footer'
+import Article from '../../components/Article/Article'
+import Navbar from '../../components/Article/Navbar'
+import Contact from '../../components/Contact/Contact'
+import Footer from '../../components/Footer/Footer'
 
-const url = () => {
+const index = () => {
 
     const router = useRouter()
 
@@ -23,4 +23,4 @@ const url = () => {
     )
 }
 
-export default url
+export default index
