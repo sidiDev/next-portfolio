@@ -4,8 +4,21 @@ import Footer from "../components/Footer/Footer"
 
 import Head from 'next/head'
 import api from "../components/api/api"
+import { useEffect, useState } from "react"
+import axios from "axios"
 
-const index = ({data}) => {
+const index = () => {
+
+    const [data, setData]= useState([])
+
+    useEffect(() => {
+
+        axios.get(`${api()}/api/articles`).then(res => {
+            if (res.data.articles) {
+                setData(res.data.articles)
+            }
+        })
+    }, [])
     
     return (
         <div className="font-mono bg-white">
@@ -46,10 +59,10 @@ const index = ({data}) => {
     )
 }
 
-index.getInitialProps = async () => {
-    const res = await fetch(`${api()}/api/articles`)
-    const json = await res.json()
-    return { data: json.articles ?  json.articles : []}
-}
+// index.getInitialProps = async () => {
+//     const res = await fetch(`${api()}/api/articles`)
+//     const json = await res.json()
+//     return { data: json.articles ?  json.articles : []}
+// }
 
 export default index
