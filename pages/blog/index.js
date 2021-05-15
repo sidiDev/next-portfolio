@@ -10,12 +10,17 @@ import axios from "axios"
 const index = () => {
 
     const [data, setData]= useState([])
+    const [loading, setLoading]= useState(false)
 
     useEffect(() => {
 
+        setLoading(true)
         axios.get(`${api()}/api/articles`).then(res => {
             if (res.data.articles) {
                 setData(res.data.articles)
+                setLoading(false)
+            } else {
+                setLoading(false)
             }
         })
     }, [])
@@ -28,6 +33,7 @@ const index = () => {
                 <meta name="description" content="I'am a frontend developer and this is my blog i share here my software knowldge about programing, frameworks, tools, some tips to help you as a programmer or as a software engineer" />
                 <meta name="twitter:site" content="@sidi_jeddou_dev" />
                 <meta name="twitter:creator" content="@sidi_jeddou_dev" />
+                <meta name="google-site-verification" content="_AGAp-l5dDX_qosvctD2d6x0K_3-SKcPofPOd2sC1S4" />
                 <title>
                     SidiDev - Blog
                 </title>
@@ -49,7 +55,7 @@ const index = () => {
                 </div>
             </div>
             <div className="mx-8 mt-32 mb-4 grid gap-2 sm:w-5/6 lg:w-4/6 sm:grid-cols-2 sm:mx-auto">
-                <BlogCard data={data} />
+                <BlogCard data={data} loading={loading} />
             </div>
             <div className="mt-4">
                 <Contact />
