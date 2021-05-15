@@ -26,7 +26,7 @@ const BlogCard = (props) => {
                                             </div>
                                             <div>
                                                 <span className="block text-gray-900">{items.cratedName}</span>
-                                                <span className="block text-gray-400 text-sm">{items.date}</span>
+                                                <span className="block text-gray-400 text-sm">{new Date(items.date).toLocaleDateString()}</span>
                                             </div>
                                         </div>
                                     </a>
