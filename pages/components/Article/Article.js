@@ -50,7 +50,7 @@ const Article = ({url}) => {
                             </div>
                             <div>
                                 <span className="block text-gray-700">Posted by <span className="font-medium text-gray-900">{article[0].cratedName}</span></span>
-                                <span className="block text-gray-700">Posted at <span className="font-medium text-gray-900">{new Date(article[0].date).toLocaleDateString()}</span></span>
+                                <span className="block text-gray-700">Posted at <span className="font-medium text-gray-900">{new Date(article[0].date).toDateString()}</span></span>
                             </div>
                         </div>
                         <h1 className="text-xl mt-4">
