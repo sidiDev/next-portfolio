@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
         <Head>
           <link rel="preconnect" href="https://media.nedigital.sg" />
           <link rel="dns-prefetch" href="https://media.nedigital.sg" />
+          <meta name="google-site-verification" content="_AGAp-l5dDX_qosvctD2d6x0K_3-SKcPofPOd2sC1S4" />
         </Head>
         <Component {...pageProps} />
       </div>

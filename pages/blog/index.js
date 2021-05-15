@@ -33,7 +33,6 @@ const index = () => {
                 <meta name="description" content="I'am a frontend developer and this is my blog i share here my software knowldge about programing, frameworks, tools, some tips to help you as a programmer or as a software engineer" />
                 <meta name="twitter:site" content="@sidi_jeddou_dev" />
                 <meta name="twitter:creator" content="@sidi_jeddou_dev" />
-                <meta name="google-site-verification" content="_AGAp-l5dDX_qosvctD2d6x0K_3-SKcPofPOd2sC1S4" />
                 <title>
                     SidiDev - Blog
                 </title>
