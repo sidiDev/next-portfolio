@@ -7,7 +7,7 @@ const BlogCard = (props) => {
     return (
         <>
             {
-                props.data.length > 0 ? (
+                props.data && props.data.length > 0 ? (
                     props.data.map((items, key) => {
                         return (
                             <div className="shadow-lg border rounded-md transition duration-300 hover:shadow-sm" key={key}>
