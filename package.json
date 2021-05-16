@@ -5,12 +5,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
-    "start-dash": "next start",
-    "start": "NODE_ENV=production node server.js"
+    "start": "next start"
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "express": "^4.17.1",
     "next": "10.2.0",
     "react": "17.0.2",
     "react-dom": "17.0.2"

@@ -11,6 +11,8 @@ const Index = () => {
 
     const { url } = router.query
 
+    if (!url) router.push('/404')
+
     return (
         <div className="bg-white">
             <Navbar />
