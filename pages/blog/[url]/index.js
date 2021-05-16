@@ -1,11 +1,13 @@
+import axios from 'axios'
 import { useRouter } from 'next/router'
 import { useEffect } from 'react'
+import api from '../../components/api/api'
 import Article from '../../components/Article/Article'
 import Navbar from '../../components/Article/Navbar'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
 
-const Index = (props) => {
+const index = (props) => {
 
     const router = useRouter()
 
@@ -25,4 +27,4 @@ const Index = (props) => {
     )
 }
 
-export default Index
+export default index

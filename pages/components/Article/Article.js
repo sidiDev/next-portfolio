@@ -4,21 +4,19 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import api from '../api/api'
 
-const Article = ({url}) => {
+const Article = (props) => {
 
     const [article, setArticle] = useState([])
     const [loading, setLoading]= useState(false)
 
     const articleContent = useRef()
 
-    
     useEffect(() => {
 
         setLoading(true)
 
-        axios.get(`${api()}/api/article/${url}`).then(res => {
+        axios.get(`${api()}/api/article/${props.url}`).then(res => {
             if (res.data.article) {
-                console.log(res.data.article)
                 setArticle([res.data.article])
                 setLoading(false)
                 const convertToDOM = new DOMParser().parseFromString(res.data.article.article, "text/html")
@@ -27,7 +25,7 @@ const Article = ({url}) => {
         })
 
 
-    }, [url])
+    }, [props.url])
 
     return (
         <div className="mx-8 sm:m-auto sm:w-5/6 lg:w-4/6">
@@ -77,6 +75,29 @@ const Article = ({url}) => {
             }
         </div>
     )
+}
+
+export async function getStaticPaths() {
+
+    const { data } = await axios.get(`${api()}/api/articles`)
+
+    const paths = data.articles ?  data.articles.map(items => {
+        return {params: { url: items.url }}
+    }) : {
+        params: { url: []}
+    }
+
+    return { paths: paths, fallback: true, }
+
+}
+
+export async function getStaticProps({params}){
+
+    return{
+        props:{
+            url: params.url
+        }
+    }
 }
 
 export default Article
