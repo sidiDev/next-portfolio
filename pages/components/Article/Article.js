@@ -1,9 +1,13 @@
 import axios from 'axios'
 import { useEffect, useRef, useState } from 'react'
 import Head from 'next/head'
+import { useRouter } from 'next/router'
 import api from '../api/api'
 
-const Article = ({url}) => {
+const Article = () => {
+
+    const router = useRouter()
+    const { url } = router.query
 
     const [article, setArticle] = useState([])
     const [loading, setLoading]= useState(false)
@@ -27,6 +31,8 @@ const Article = ({url}) => {
 
 
     }, [url])
+
+    if (!url) router.push('/404')
 
     return (
         <div className="mx-8 sm:m-auto sm:w-5/6 lg:w-4/6">
