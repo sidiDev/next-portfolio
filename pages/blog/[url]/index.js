@@ -5,13 +5,13 @@ import Navbar from '../../components/Article/Navbar'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
 
-const Index = () => {
+const Index = (props) => {
 
     const router = useRouter()
 
     const { url } = router.query
 
-    if (!url) router.push('/404')
+    console.log(props);
 
     return (
         <div className="bg-white">
