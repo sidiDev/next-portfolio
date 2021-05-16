@@ -77,27 +77,4 @@ const Article = (props) => {
     )
 }
 
-export async function getStaticPaths() {
-
-    const { data } = await axios.get(`${api()}/api/articles`)
-
-    const paths = data.articles ?  data.articles.map(items => {
-        return {params: { url: items.url }}
-    }) : {
-        params: { url: []}
-    }
-
-    return { paths: paths, fallback: true, }
-
-}
-
-export async function getStaticProps({params}){
-
-    return{
-        props:{
-            url: params.url
-        }
-    }
-}
-
 export default Article
