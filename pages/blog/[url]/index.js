@@ -10,12 +10,14 @@ import Footer from '../../components/Footer/Footer'
 const index = (props) => {
 
     const router = useRouter()
-    
+
+    const { url } = router.query
+
     return (
         <div className="bg-white">
             <Navbar />
             <div className="mt-32">
-                <Article url={props.url} />
+                <Article url={url} />
             </div>
             <Contact />
             <Footer />
@@ -23,13 +25,13 @@ const index = (props) => {
     )
 }
 
-index.getInitialProps = async ({query}) => {
+// index.getInitialProps = async ({query}) => {
 
-    const { url } = query
+//     const { url } = query
     
-    return {
-        param: url
-     }
-}
+//     return {
+//         param: url
+//      }
+// }
 
 export default index
