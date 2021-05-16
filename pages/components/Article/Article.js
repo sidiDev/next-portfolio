@@ -4,10 +4,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import api from '../api/api'
 
-const Article = () => {
-
-    const router = useRouter()
-    const { url } = router.query
+const Article = ({url}) => {
 
     const [article, setArticle] = useState([])
     const [loading, setLoading]= useState(false)
@@ -32,7 +29,7 @@ const Article = () => {
 
     }, [url])
 
-    if (!url) router.push('/404')
+    if (!url) window.location = '/404'
 
     return (
         <div className="mx-8 sm:m-auto sm:w-5/6 lg:w-4/6">
