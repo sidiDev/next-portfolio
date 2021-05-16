@@ -29,7 +29,7 @@ const Article = ({url}) => {
 
     }, [url])
 
-    if (!url) window.location = '/404'
+    if (!url) console.log('Error 404');
 
     return (
         <div className="mx-8 sm:m-auto sm:w-5/6 lg:w-4/6">
