@@ -32,7 +32,7 @@ const Article = (props) => {
     }, [props.url])
 
     return (
-        <div className="mx-8 sm:m-auto sm:w-5/6 lg:w-4/6">
+        <article className="mx-8 sm:m-auto sm:w-5/6 lg:w-4/6">
             {
                 loading ? (
                     <div className="pb-12">
@@ -101,7 +101,7 @@ const Article = (props) => {
                     ) : ''
                 )
             }
-        </div>
+        </article>
     )
 }
 

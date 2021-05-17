@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }) {
         <Head>
         <meta charset="UTF-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	  <meta name="roboots" content="index,follow" />
           <meta name="viewport" content="width=device-width, initial-scale=1.0" />
           <link rel="preconnect" href="https://media.nedigital.sg" />
           <link rel="dns-prefetch" href="https://media.nedigital.sg" />
