@@ -21,7 +21,7 @@ const index = (props) => {
     )
 }
 
-export async function getServerSideProps ({query}) {
+index.getServerSideProps = async ({query}) => {
 
     const { url } = query
     const { data } = await axios.get(`${api()}/api/article/${url}`)
