@@ -7,13 +7,11 @@ import SocialMediaShare from '../SocialMediaShare/SocialMediaShare'
 
 const Article = (props) => {
 
-    const [article, setArticle] = useState([props.data.data])
+    const [article, setArticle] = useState([props.data])
     const [loading, setLoading] = useState(props.data.loading)
     const [shareToggle, setShareToggle]= useState(false)
 
     const router = useRouter()
-
-    console.log(props.data);
 
     const articleContent = useRef()
 
@@ -31,7 +29,6 @@ const Article = (props) => {
                 const convertToDOM = new DOMParser().parseFromString(article[0].article, "text/html")
                 articleContent.current.innerHTML = convertToDOM.childNodes[0].lastChild.childNodes[0].innerHTML
 
-                console.log(article.article);
     }, [])
 
     return (
