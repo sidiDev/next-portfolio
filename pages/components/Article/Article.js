@@ -7,7 +7,7 @@ import SocialMediaShare from '../SocialMediaShare/SocialMediaShare'
 
 const Article = (props) => {
 
-    const [article, setArticle] = useState([props.data.data ? props.data.data : ''])
+    const [article, setArticle] = useState(props.data.data)
     const [loading, setLoading] = useState()
     const [shareToggle, setShareToggle]= useState(false)
 
@@ -26,8 +26,11 @@ const Article = (props) => {
         //     }
         // })
         
-                const convertToDOM = new DOMParser().parseFromString(article[0].article, "text/html")
-                articleContent.current.innerHTML = convertToDOM.childNodes[0].lastChild.childNodes[0].innerHTML
+        if (article.length > 0) {
+
+            const convertToDOM = new DOMParser().parseFromString(article[0].article, "text/html")
+            articleContent.current.innerHTML = convertToDOM.childNodes[0].lastChild.childNodes[0].innerHTML
+        }
 
     }, [])
 

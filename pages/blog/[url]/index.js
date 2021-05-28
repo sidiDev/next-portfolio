@@ -27,7 +27,7 @@ index.getInitialProps = async ({query}) => {
     const { data } = await axios.get(`${api()}/api/article/${url}`)
 
     return {
-        article: data.article ? {data: data.article, loading: false} : {data: [], loading: false}
+        article: data.article ? {data: [data.article]} : {data: []}
     }
 }
 
