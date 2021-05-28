@@ -8,7 +8,7 @@ import SocialMediaShare from '../SocialMediaShare/SocialMediaShare'
 const Article = (props) => {
 
     const [article, setArticle] = useState([props.data])
-    const [loading, setLoading] = useState(props.data.loading)
+    const [loading, setLoading] = useState()
     const [shareToggle, setShareToggle]= useState(false)
 
     const router = useRouter()
