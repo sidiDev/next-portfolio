@@ -28,7 +28,7 @@ export async function getServerSideProps ({query}) {
 
     return {
         props: {
-            article: data.article ? {data: [data.article]} : {data: []}
+            article: data
         }
     }
 }
