@@ -7,7 +7,7 @@ import SocialMediaShare from '../SocialMediaShare/SocialMediaShare'
 
 const Article = (props) => {
 
-    const [article, setArticle] = useState([props.data])
+    const [article, setArticle] = useState([props.data.data])
     const [loading, setLoading] = useState()
     const [shareToggle, setShareToggle]= useState(false)
 
