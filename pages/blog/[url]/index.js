@@ -21,13 +21,15 @@ const index = (props) => {
     )
 }
 
-index.getInitialProps = async ({query}) => {
+export async function getServerSideProps ({query}) {
 
     const { url } = query
     const { data } = await axios.get(`${api()}/api/article/${url}`)
 
     return {
-        article: data.article ? {data: [data.article]} : {data: []}
+        props: {
+            article: data.article ? {data: [data.article]} : {data: []}
+        }
     }
 }
 
