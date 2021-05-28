@@ -1,8 +1,12 @@
 import Link from 'next/link'
 import { useEffect } from 'react'
+import Error from 'next/error'
 
 const BlogCard = (props) => {
 
+    if (props.statusCode == 200) {
+        return <Error statusCode={props.statusCode} />
+    } 
     
     return (
         <>

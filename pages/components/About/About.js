@@ -11,8 +11,8 @@ const About = () => {
                         <p className="text-gray-800 text-left">
                             Hello everybody my name is Sidi, i'am from mauritania, 
                             i have expertise in <b>front end development</b>, 
-                            i create some amazing projects like <b>youtube interface</b> and <b>freelance site</b> interface and <b>ecommerce</b> site,
-                            i have a good knowledge in <b>Html</b> and <b>Css</b> and <b>js</b> and <b>React</b> and <b>tailwindcss</b> and other,
+                            i created some amazing projects like <b>youtube interface</b> and <b>freelance site</b> interface and <b>ecommerce</b> site,
+                            i have a good knowledge in <b>Html</b> and <b>Css</b> and <b>js</b> and <b>React</b> and <b>tailwindcss</b> ...etc,
                             i'am always trying to improve my skills.
                         </p>
                     </div>
