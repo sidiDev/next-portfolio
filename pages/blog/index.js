@@ -7,23 +7,23 @@ import api from "../components/api/api"
 import { useEffect, useState } from "react"
 import axios from "axios"
 
-const index = () => {
+const index = (props) => {
 
-    const [data, setData]= useState([])
-    const [loading, setLoading]= useState(false)
+    // const [data, setData]= useState([])
+    // const [loading, setLoading]= useState(false)
 
-    useEffect(() => {
+    // useEffect(() => {
 
-        setLoading(true)
-        axios.get(`${api()}/api/articles`).then(res => {
-            if (res.data.articles) {
-                setData(res.data.articles)
-                setLoading(false)
-            } else {
-                setLoading(false)
-            }
-        })
-    }, [])
+    //     setLoading(true)
+    //     axios.get(`${api()}/api/articles`).then(res => {
+    //         if (res.data.articles) {
+    //             setData(res.data.articles)
+    //             setLoading(false)
+    //         } else {
+    //             setLoading(false)
+    //         }
+    //     })
+    // }, [])
     
     return (
         <div className="font-mono bg-white">
@@ -54,7 +54,7 @@ const index = () => {
                 </div>
             </div>
             <div className="mx-8 mt-32 mb-4 grid gap-2 sm:w-5/6 lg:w-4/6 sm:grid-cols-2 sm:mx-auto">
-                <BlogCard data={data} loading={loading} />
+                <BlogCard data={props.articles} />
             </div>
             <div className="mt-4">
                 <Contact />
@@ -62,6 +62,14 @@ const index = () => {
             </div>
         </div>
     )
+}
+
+index.getInitialProps = async () => {
+    const { data } = await  axios.get(`${api()}/api/articles`)
+
+    return {
+        articles: data.articles ? {data: data.articles, loading: false} : {data: [], loading: false}
+    }
 }
 
 export default index

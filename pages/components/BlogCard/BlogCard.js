@@ -8,7 +8,7 @@ const BlogCard = (props) => {
         <>
             {
                 
-                props.loading ? (
+                props.data.loading ? (
                     <div className="pb-12">
                         <svg className="animate-spin m-auto h-14 w-14 text-indigo-600 absolute left-0 right-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                             <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
@@ -17,8 +17,8 @@ const BlogCard = (props) => {
                     </div>
                 ) : (
 
-                    props.data && props.data.length > 0 ? (
-                        props.data.map((items, key) => {
+                    props.data.data && props.data.data.length > 0 ? (
+                        props.data.data.map((items, key) => {
                             return (
                                 <div className="shadow-lg border rounded-md transition duration-300 hover:shadow-sm" key={key}>
                                     <Link href={`/blog/${items.url}`}>

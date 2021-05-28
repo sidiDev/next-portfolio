@@ -7,29 +7,32 @@ import SocialMediaShare from '../SocialMediaShare/SocialMediaShare'
 
 const Article = (props) => {
 
-    const [article, setArticle] = useState([])
-    const [loading, setLoading]= useState(false)
+    const [article, setArticle] = useState([props.data.data])
+    const [loading, setLoading] = useState(props.data.loading)
     const [shareToggle, setShareToggle]= useState(false)
 
     const router = useRouter()
+
+    console.log(props.data);
 
     const articleContent = useRef()
 
     useEffect(() => {
 
-        setLoading(true)
+        // setLoading(true)
 
-        axios.get(`${api()}/api/article/${props.url}`).then(res => {
-            if (res.data.article) {
-                setArticle([res.data.article])
-                setLoading(false)
-                const convertToDOM = new DOMParser().parseFromString(res.data.article.article, "text/html")
+        // axios.get(`${api()}/api/article/${props.url}`).then(res => {
+        //     if (res.data.article) {
+        //         setArticle([res.data.article])
+        //         setLoading(false)
+        //     }
+        // })
+        
+                const convertToDOM = new DOMParser().parseFromString(article[0].article, "text/html")
                 articleContent.current.innerHTML = convertToDOM.childNodes[0].lastChild.childNodes[0].innerHTML
-            }
-        })
 
-
-    }, [props.url])
+                console.log(article.article);
+    }, [])
 
     return (
         <article className="mx-8 sm:m-auto sm:w-5/6 lg:w-4/6">
