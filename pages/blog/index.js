@@ -64,13 +64,4 @@ const index = (props) => {
     )
 }
 
-index.getInitialProps = async () => {
-    const { data } = await  axios.get(`${api()}/api/articles`)
-
-    return {
-        articles: data.articles ? {data: data.articles, loading: false} : {data: [], loading: false},
-        statusCode: 200
-    }
-}
-
 export default index
