@@ -8,22 +8,6 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 
 const index = (props) => {
-
-    // const [data, setData]= useState([])
-    // const [loading, setLoading]= useState(false)
-
-    // useEffect(() => {
-
-    //     setLoading(true)
-    //     axios.get(`${api()}/api/articles`).then(res => {
-    //         if (res.data.articles) {
-    //             setData(res.data.articles)
-    //             setLoading(false)
-    //         } else {
-    //             setLoading(false)
-    //         }
-    //     })
-    // }, [])
     
     return (
         <div className="font-mono bg-white">
@@ -62,6 +46,14 @@ const index = (props) => {
             </div>
         </div>
     )
+}
+
+index.getInitialProps = async () => {
+    const { data } = await  axios.get(`${api()}/api/articles`)
+
+    return {
+        articles: data.articles ? {data: data.articles, loading: false} : {data: [], loading: false},
+    }
 }
 
 export default index
