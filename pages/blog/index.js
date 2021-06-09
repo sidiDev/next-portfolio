@@ -8,6 +8,8 @@ import { useEffect, useState } from "react"
 import axios from "axios"
 
 const index = (props) => {
+
+    console.log(props);
     
     return (
         <div className="font-mono bg-white">
@@ -48,12 +50,23 @@ const index = (props) => {
     )
 }
 
-index.getInitialProps = async () => {
-    const { data } = await  axios.get(`${api()}/api/articles`)
+export async function getStaticProps() {
 
-    return {
-        articles: data.articles ? {data: data.articles, loading: false} : {data: [], loading: false},
-    }
+  const { data } = await  axios.get(`${api()}/api/articles`)
+  
+  return {
+      props: {
+          articles: data.articles ? {data: data.articles, loading: false} : {data: [], loading: false}
+      }
+  }
 }
+
+// index.getInitialProps = async () => {
+//     const { data } = await  axios.get(`${api()}/api/articles`)
+
+//     return {
+//         articles: data.articles ? {data: data.articles, loading: false} : {data: [], loading: false},
+//     }
+// }
 
 export default index

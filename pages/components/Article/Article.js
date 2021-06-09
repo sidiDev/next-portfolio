@@ -49,14 +49,16 @@ const Article = (props) => {
                     article.length > 0 ? (
                         <div className="relative">
                             <Head>
-                                <meta property="og:image" content={`${article[0].img}?fit=max&amp;fm=jpg&amp;w=1000`} />
+                                <meta property="og:image" content={article[0].img} />
                                 <meta property="og:image:width" content="1007" />
                                 <meta property="og:image:height" content="527" />
                                 <meta property="og:site_name" content="sidiDev - front end developer" />
                                 <meta name="keyword" content="programing,software,developer,blog,front end,front end job,web developer,web development,web designer,html,css,javascript,bootstrap,web dev,web,website, javascript,go,c#,c++,python,php,nodejs,expressjs,ruby,tailwindcss,sass,scss,reactjs,nextjs" />
+                                <meta property="og:type" content="article" />
                                 <meta name="description" content={article[0].description} />
-                                <meta name="twitter:site" content="@sidi_jeddou_dev" />
-                                <meta name="twitter:creator" content="@sidi_jeddou_dev" />
+                                <meta property="og:title" content={article[0].title} />
+                                <meta property="og:description" content={article[0].description} />
+                                <meta name="roboots" content="index,follow" />
                                 <title>
                                     {article[0].title}
                                 </title>
