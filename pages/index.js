@@ -10,7 +10,7 @@ import Bar from './components/Bar/Bar'
 
 export default function Home() {
   return (
-    <div className="relative font-mono">
+    <div className="relative font-mono p-0 m-0">
       <Head>
         <meta property="og:site_name" content="sidiDev - front end developer" /> 
         <meta name="keyword" content="developer,portfolio,front end,front end job,web developer,web development,web designer,html,css,javascript,bootstrap,web dev,web,website" />

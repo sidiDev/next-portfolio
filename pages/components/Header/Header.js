@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <header className="m-0">
+        <header className="m-0 p-0">
             <div className="w-full bg-white relative overflow-hidden header-container">
                 <div className="block sm:flex sm:justify-between h-full sm:items-center relative z-30 bg-white"> 
                     <div className="block mx-8 sm:flex sm:justify-between sm:mx-12 h-full sm:items-center">
@@ -20,7 +20,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
-            <div className="relative z-10 transform sm:-translate-y-8 md:-translate-y-10 header-bottom">
+            <div className="relative z-20 transform sm:-translate-y-8 md:-translate-y-10 header-bottom">
                 <img src='/images/wave2.svg' className="absolute" style={{top: '2px'}}/>
                 <img src='/images/wave.svg' className="absolute z-20"/>
             </div>
