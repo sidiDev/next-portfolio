@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@fullhuman/postcss-purgecss": "^4.0.3",
     "axios": "^0.21.1",
     "next": "10.2.0",
     "next-share": "^0.4.0",
