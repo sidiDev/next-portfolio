@@ -15,6 +15,12 @@ function MyApp({ Component, pageProps }) {
           <meta name="google-site-verification" content="_AGAp-l5dDX_qosvctD2d6x0K_3-SKcPofPOd2sC1S4" />
         </Head>
         <Component {...pageProps} />
+
+        <style global jsx>{`
+        body {
+          background: #F3F4F6;
+        }
+      `}</style>
       </div>
   ) 
 }
