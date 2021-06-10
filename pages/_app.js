@@ -4,7 +4,7 @@ import Head from 'next/head'
 
 function MyApp({ Component, pageProps }) {
   return (    
-      <div className="app-container bg-gray-100">
+      <div className="app-container">
         <Head>
         <meta charset="UTF-8" />
           <meta http-equiv="X-UA-Compatible" content="IE=edge" />

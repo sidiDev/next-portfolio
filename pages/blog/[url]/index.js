@@ -11,7 +11,7 @@ const index = (props) => {
     return (
         <div className="bg-white">
             <Navbar />
-            <div style={{marginTop: '4em', overflow: 'hidden'}}>
+            <div className="">
                 <Article data={props.data} />
             </div>
             <Contact />

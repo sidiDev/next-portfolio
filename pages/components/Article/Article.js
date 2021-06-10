@@ -63,8 +63,8 @@ const Article = (props) => {
                                     {article[0].title}
                                 </title>
                             </Head>
-                            <div className="relative">
-                                <img src={article[0].img} alt={article[0].title} className="w-full rounded-md h-60 sm:h-72 md:h-96" />
+                            <div className="relative overflow-hidden">
+                                <img src={article[0].img} alt={article[0].title} className="w-full mt-32 rounded-md h-60 sm:h-72 md:h-96" />
                             
                                 <div className="absolute h-full right-4 top-0">
                                     <div className={`overflow-hidden absolute right-0 -bottom-1 w-12 ${shareToggle ? 'h-60' : 'h-0'} transform translate-y-2 shadow-md bg-white rounded-md rounded-br-lg`} style={{transition: '.3s'}}>
