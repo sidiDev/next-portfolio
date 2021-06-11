@@ -30,7 +30,7 @@ export async function getStaticPaths () {
         params: {url: ''}
     }
 
-    return { paths, fallback: false, revalidate: 1 }
+    return { paths, fallback: 'blocking', }
 }
 
 export async function getStaticProps({ params }) {
