@@ -8,22 +8,16 @@ import Error from 'next/error'
 
 const index = (props) => {
 
-    if (props.data && !props.data.article) return <Error statusCode={404} />
+    if (!props.data.article) return <Error statusCode={404} />
 
     return (
         <div className="bg-white">
-            {
-                props.data && !props.data.article ? '' : (
-                    <>
-                        <Navbar />
-                        <div className="">
-                            <Article data={props.data} />
-                        </div>
-                        <Contact />
-                        <Footer />
-                    </>
-                )
-            }
+            <Navbar />
+            <div className="">
+                <Article data={props.data} />
+            </div>
+            <Contact />
+            <Footer />
         </div>
     )
 }
