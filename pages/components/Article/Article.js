@@ -36,7 +36,7 @@ const Article = (props) => {
 
     }, [])
 
-    if (!props.data.article) <Error statusCode={404} />
+    if (article.length == 0) <Error statusCode={404} />
 
     return (
         <article className="mx-8 sm:m-auto sm:w-5/6 lg:w-4/6">
