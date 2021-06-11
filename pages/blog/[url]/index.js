@@ -12,12 +12,18 @@ const index = (props) => {
 
     return (
         <div className="bg-white">
-            <Navbar />
-            <div className="">
-                <Article data={props.data} />
-            </div>
-            <Contact />
-            <Footer />
+            {
+                props.data && !props.data.article ? '' : (
+                    <>
+                        <Navbar />
+                        <div className="">
+                            <Article data={props.data} />
+                        </div>
+                        <Contact />
+                        <Footer />
+                    </>
+                )
+            }
         </div>
     )
 }
