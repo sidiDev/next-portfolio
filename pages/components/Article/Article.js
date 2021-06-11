@@ -4,7 +4,6 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import api from '../api/api'
 import SocialMediaShare from '../SocialMediaShare/SocialMediaShare'
-import Error from 'next/error'
 
 const Article = (props) => {
 
@@ -35,8 +34,6 @@ const Article = (props) => {
         }
 
     }, [])
-
-    if (props.data && !props.data.article) return <Error statusCode={404} />
 
     return (
         <article className="mx-8 sm:m-auto sm:w-5/6 lg:w-4/6">
