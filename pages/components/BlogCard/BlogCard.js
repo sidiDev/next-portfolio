@@ -12,7 +12,8 @@ const BlogCard = (props) => {
                         props.data.data.map((items, key) => {
                             return (
                                 <div className="shadow-lg border rounded-md transition duration-300 hover:shadow-sm" key={key}>
-                                    <a href={`/blog/${items.url}`}>
+                                    <Link href={`/blog/${items.url}`}>
+                                        <a>
                                             <img src={`${items.img}?q=70`} loading="lazy" alt={items.title}  className="w-full h-48 rounded-tl-md rounded-tr-md" />
                                             <div className="pt-3 ml-6 mr-2">
                                                 <p className="text-xl text-gray-900">
@@ -29,7 +30,8 @@ const BlogCard = (props) => {
                                                     <span className="block text-gray-400 text-sm">{new Date(items.date).toDateString()}</span>
                                                 </div>
                                             </div>
-                                    </a>
+                                        </a>
+                                    </Link>
                                 </div>
                             )
                         })
