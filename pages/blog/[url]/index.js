@@ -38,7 +38,8 @@ export async function getStaticProps({ params }) {
     const { data } = await axios.get(`${api()}/api/article/${params.url}`)
     
     return {
-        props: { data }
+        props: { data },
+	revalidate: 1
     }
 }
 
