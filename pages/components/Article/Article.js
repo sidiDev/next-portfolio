@@ -47,7 +47,7 @@ const Article = (props) => {
                 //     </div>
                 // ) : (
                     article.length > 0 ? (
-                        <div className="relative">
+                        <div className="relative overflow-hidden">
                             <Head>
                                 <meta property="og:image" content={article[0].img} />
                                 <meta property="og:image:width" content="1007" />
@@ -63,7 +63,7 @@ const Article = (props) => {
                                     {article[0].title}
                                 </title>
                             </Head>
-                            <div className="relative overflow-hidden">
+                            <div className="relative">
                                 <img src={article[0].img} alt={article[0].title} className="w-full mt-32 rounded-md h-60 sm:h-72 md:h-96" />
                             
                                 <div className="absolute h-full right-4 top-0">
