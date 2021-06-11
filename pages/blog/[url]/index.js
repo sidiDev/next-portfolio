@@ -4,9 +4,11 @@ import Article from '../../components/Article/Article'
 import Navbar from '../../components/Article/Navbar'
 import Contact from '../../components/Contact/Contact'
 import Footer from '../../components/Footer/Footer'
+import Error from 'next/error'
 
 const index = (props) => {
 
+    if (props.data && !props.data.article) return <Error statusCode={404} />
 
     return (
         <div className="bg-white">
