@@ -11,7 +11,7 @@ const BlogCard = (props) => {
                     props.data && props.data.data.length > 0 ? (
                         props.data.data.map((items, key) => {
                             return (
-                                <div className="shadow-lg border rounded-md transition duration-300 hover:shadow-sm" key={key}>
+                                <article className="shadow-lg border rounded-md transition duration-300 hover:shadow-sm" key={key}>
                                     <Link href={`/blog/${items.url}`}>
                                         <a>
                                             <img src={`${items.img}?q=70`} loading="lazy" alt={items.title}  className="w-full h-48 rounded-tl-md rounded-tr-md" />
@@ -32,7 +32,7 @@ const BlogCard = (props) => {
                                             </div>
                                         </a>
                                     </Link>
-                                </div>
+                                </article>
                             )
                         })
                     ) : ''
