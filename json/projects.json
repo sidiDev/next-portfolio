@@ -3,7 +3,7 @@
         "imgSrc": "project-1.webp",
         "title": "Viewport tool",
         "desc": "built using html and tailwindcss and javaScript",
-        "preview": "viewport-tool.vercel.app",
+        "preview": "https://viewport-tool.vercel.app",
         "code": "https://github.com/sidiDev/viewport-tool"
     }
 ]
