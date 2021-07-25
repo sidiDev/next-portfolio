@@ -28,6 +28,10 @@
         "title": "Redux" 
     },
     {
+        "imgSrc": "next.png",
+        "title": "Next.js" 
+    },
+    {
         "imgSrc": "version-control.webp",
         "title": "Version Control" 
     }
