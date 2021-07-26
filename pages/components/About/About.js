@@ -10,10 +10,10 @@ const About = () => {
                     <div className="w-full mt-5">
                         <p className="text-gray-800 text-left">
                             Hello everybody, my name is Sidi, 
-                            I'm a senior <b>front-end web developer</b>
+                            I'm a senior <b>front-end web developer </b>
                             with 3 years of experience.
                             <br />
-                            My goal is to build beautiful UIs (user experience) and better user experience
+                            My goal is to build beautiful UIs (User Interfaces) and better user experience
                             and make the websites responsive with all devices and faster.
                         </p>
                     </div>

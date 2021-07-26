@@ -8,7 +8,7 @@ const Projects = () => {
             projects.map((items, key) => {
                 return (
                     <div key={key} className="bg-white rounded-md shadow-md border border-gary-200 mt-3 p-4">
-                        <div style={{backgroundImage: `url("/projects/${items.imgSrc}")`}} className="bg-cover w-full h-48 rounded-md"></div>
+                        <div style={{backgroundImage: `url("/projects/${items.imgSrc}")`}} className="bg-cover bg-no-repeat w-full h-48 rounded-md"></div>
                         <div className="mt-5">
                             <span className="text-xl font-semibold text-gray-700">{items.title}</span>
                             <p className="text-sm mt-2 text-gray-500">{items.desc}</p>
