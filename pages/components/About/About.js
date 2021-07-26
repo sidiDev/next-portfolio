@@ -9,11 +9,12 @@ const About = () => {
                     </div>
                     <div className="w-full mt-5">
                         <p className="text-gray-800 text-left">
-                            Hello everybody my name is Sidi, 
-                            I have expertise in <b>front end development</b>, 
-                            I created some amazing projects like <b>youtube interface</b> and <b>freelance site</b> interface and <b>ecommerce</b> site,
-                            I have a good knowledge in <b>Html</b> and <b>Css</b> and <b>js</b> and <b>React</b> and <b>tailwindcss</b> ...etc,
-                            I'am always try to improve my skills.
+                            Hello everybody, my name is Sidi, 
+                            I'm a senior <b>front-end web developer</b>
+                            with 3 years of experience.
+                            <br />
+                            My goal is to build beautiful UIs (user experience) and better user experience
+                            and make the websites responsive with all devices and faster.
                         </p>
                     </div>
                 </div>

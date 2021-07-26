@@ -1,5 +1,12 @@
 [
     {
+        "imgSrc": "project-2.webp",
+        "title": "Hotel web app",
+        "desc": "built using react and css",
+        "preview": "https://hotelfy.vercel.app/",
+        "code": "https://github.com/sidiDev/hotel-app"
+    },
+    {
         "imgSrc": "project-1.webp",
         "title": "Viewport tool",
         "desc": "built using html and tailwindcss and javaScript",
