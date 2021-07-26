@@ -5,7 +5,7 @@ export default () => {
         projects.map((items, key) => {
             return (
                 <div className="bg-white rounded-md shadow-md border border-gary-200 mt-3 p-4" key={key}>
-                    <div className="bg-cover bg-no-repeat w-full h-48 rounded-md" style={{backgroundImage: `url("/projects/${items.imgSrc}")`}}></div>
+                    <div className="bg-no-repeat w-full h-48 rounded-md" style={{backgroundImage: `url("/projects/${items.imgSrc}")`, backgroundSize: 'cover'}}></div>
                     <div className="mt-5">
                         <span className="text-xl font-semibold text-gray-700">{items.title}</span>
                         <p className="text-sm mt-2 text-gray-500">{items.desc}</p>
