@@ -1,5 +1,12 @@
 [
     {
+        "imgSrc": "project-3.webp",
+        "title": "saaS landing page",
+        "desc": "built using Html and Sass and javaScript",
+        "preview": "https://saas-landing-page.vercel.app/",
+        "code": "https://github.com/sidiDev/saas-landing-page"
+    },
+    {
         "imgSrc": "project-2.webp",
         "title": "Hotel web app",
         "desc": "built using react and css",
