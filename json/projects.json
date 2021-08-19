@@ -1,5 +1,12 @@
 [
     {
+        "imgSrc": "project-4.webp",
+        "title": "Job search",
+        "desc": "built using Nextjs tailwindcss Nodejs mongoDB",
+        "preview": "https://usa-job-search.vercel.app/",
+        "code": "https://github.com/sidiDev/job-search"
+    },
+    {
         "imgSrc": "project-3.webp",
         "title": "saaS landing page",
         "desc": "built using Html and Sass and javaScript",
