@@ -74,7 +74,7 @@ const Article = (props) => {
                             <h1 className="text-xl mt-4">
                                 {article[0].title}
                             </h1>
-                            <div className="mt-12 article-content prose" dangerouslySetInnerHTML={{__html:article[0].article.childNodes[0]}}></div>
+                            <div className="mt-12 article-content prose" dangerouslySetInnerHTML={{__html:article[0].article.childNodes[0].children}}></div>
                         </div>
                     ) : ''
             }
