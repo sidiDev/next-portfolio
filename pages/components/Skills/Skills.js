@@ -8,7 +8,7 @@ const Skills = () => {
                 return (
                     <div className="bg-white text-center pb-5 pt-3 w-56 rounded shadow-lg skill" key={key}>
                         <div className="w-16 h-16 flex items-center justify-center rounded-full bg-gray-500 m-auto">
-                            <img src={`/images/${items.imgSrc}?q=70`} loading="lazy" className="w-8 h-9" />
+                            <img src={`/images/${items.imgSrc}?q=70`} className="w-8 h-9" />
                         </div>
                         <p className="mt-2">{items.title}</p>
                     </div>
