@@ -5,9 +5,9 @@ const Header = () => {
                 <div className="block sm:flex sm:justify-between h-full sm:items-center relative z-30 bg-white"> 
                     <div className="block mx-8 sm:flex sm:justify-between sm:mx-12 h-full sm:items-center">
                         <div className=" w-full mt-32 sm:pt-0 sm:mt-0">
-                            <p className="text-xl text-2xl sm:text-3xl">Front End Developer</p>
+                            <p className="text-2xl sm:text-3xl">Front End Developer</p>
                             <div className="mt-3">
-                                <p className="text-left text-gray-800">
+                                <p className="text-left text-gray-800 leading-6">
                                     welcome everybody in my portfolio and all information
                                         <br/>
                                     about me and what is my job

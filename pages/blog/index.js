@@ -29,7 +29,7 @@ const index = (props) => {
                         <h1 className="text-3xl text-gray-100 sm:text-4xl">
                             Welcome in my blog
                         </h1>
-                        <p className="mt-2 m-auto text-gray-300 text-sm sm:text-base sm:w-5/6">I share some of my experience and my software knowldge in this blog</p>
+                        <p className="mt-2 m-auto text-gray-300 text-sm leading-6 sm:text-base sm:w-5/6">I share some of my experience and my software knowldge on this blog</p>
                     </div>
                     <div className="absolute w-full h-full bg-gray-900 top-0 opacity-60 z-20"></div>
                 </div>

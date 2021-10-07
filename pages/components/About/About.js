@@ -8,7 +8,7 @@ const About = () => {
                         <img src='/images/about.webp' />
                     </div>
                     <div className="w-full mt-5">
-                        <p className="text-gray-800 text-left">
+                        <p className="text-gray-800 text-left leading-6">
                             Hello everybody, my name is Sidi, 
                             I'm a senior <b>front-end web developer </b>
                             with 3 years of experience.
@@ -16,20 +16,6 @@ const About = () => {
                             My goal is to build beautiful UIs (User Interfaces) and better user experience
                             and make the websites responsive with all devices and faster.
                         </p>
-                    </div>
-                </div>
-                <div className="flex flex-wrap sm:space-x-6 mt-5 justify-center">
-                    <div className="w-full sm:w-48 mt-5 sm:mt-0">
-                        <img src='/images/responsive.webp' className="w-16 m-auto"/>
-                        <p className="mt-2 text-center"><b>Responsive Design</b></p>
-                    </div>
-                    <div className="w-full sm:w-48 mt-5 sm:mt-0">
-                        <img src='/images/idea.webp' className="w-16 m-auto"/>
-                        <p className="mt-2 text-center"><b>Creative</b></p>
-                    </div>
-                    <div className="w-full sm:w-48 mt-5 sm:mt-0">
-                        <img src='/images/clean-code.webp' className="w-16 m-auto"/>
-                        <p className="mt-2 text-center"><b>Clean &amp; reusable code</b></p>
                     </div>
                 </div>
             </div>
