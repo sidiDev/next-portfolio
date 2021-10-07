@@ -1,4 +1,4 @@
-const api = () => 'https://api-next-blog.herokuapp.com'
+const api = () => 'http://localhost:8000'
 
 export default api
 //http://localhost:8000
